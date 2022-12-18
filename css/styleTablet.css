@@ -1,0 +1,647 @@
+.footertablet,
+.tablet-container,
+.navbar__table *,
+.head--table * {
+    display: none;
+    background-color: #000000;
+}
+
+.lidersale--mobile,
+.nav-toggle {
+    display: none;
+}
+
+.footer--tablet {
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer__button,
+    .footerdesktop,
+    .section__card,
+    .subscribe__title,
+    .subscribe__text,
+    .catalog__text,
+    .advert,
+    .card__image,
+    .head,
+    .navbar-expand-lg,
+    .main__hidden,
+    .header__cologo--tablet,
+    .section__options,
+    .bt__hid {
+        display: none;
+    }
+
+    .footer__contacts {
+        padding-left: 10px;
+    }
+
+    .tablet-container,
+    .nav-toggle,
+    .navbar__table *,
+    .head--table * {
+
+        display: unset;
+    }
+
+    .footertablet {
+        display: block;
+    }
+
+    .head--table {
+        background-color: #000000;
+        margin: 0px;
+    }
+
+    .navbar__table {
+        background-color: #000000;
+    }
+
+    .header__tablet--span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        mix-blend-mode: normal;
+    }
+
+    .header__name--tablet {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+        color: #000000;
+        color: white;
+    }
+
+    .header__contacts--tablet {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 0px;
+        /* identical to box height */
+        color: white;
+    }
+
+    .header__icon-tablet {
+        position: absolute;
+        top: 6px;
+        right: 140px;
+        margin-left: 4rem;
+        width: 34px;
+    }
+
+    .header__icon-tablet:nth-child(2) {
+        width: 34px;
+        margin-left: 10px;
+        margin-top: 2px;
+        position: absolute;
+        top: 8px;
+        right: 92px;
+    }
+    .footer{
+        margin-top: 0px ;
+    }
+    
+}
+
+.hidden-menu {
+    opacity: 95%;
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 50px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 220px;
+    background-color: #000000;
+    height: 100%;
+    top: 0;
+    right: -220px;
+    transition: right .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu li a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+    /* плавный переход */
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+
+.hidden-menu li a:hover {
+    color: #fff;
+}
+
+/*скрываем инпут чекбокс*/
+.hidden-menu-ticker {
+    display: none;
+}
+
+/*общие стили значка-гамбургера, самого лэйбла*/
+.btn-menu {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 2px;
+    position: absolute;
+    top: 8px;
+    right: 36px;
+    cursor: pointer;
+    transition: right .23s;
+    z-index: 3;
+    width: 42px;
+
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.head--table>ul>li>a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+.head--table>ul>li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #4a4a4a;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+ul>li>a:hover:before {
+    width: 0%;
+    background: #6a6a6a;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+ul>li>a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+.btn-menu span {
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 10px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu {
+    right: 170px;
+    background-color: #000000;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    right: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 8px;
+    background-color: #fff;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -16px;
+    background-color: #fff;
+}
+
+.mask-content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.mask-content {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+}
+
+@media only screen and (max-width: 643px) {
+    .header__col--tablet {
+        position: relative;
+        top: 0px;
+        right: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 580px) {
+    .header__col--tablet {
+        display: none;
+    }
+
+    .head--table {
+
+        height: 46px;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    .header__col--tablet {
+        position: fixed;
+
+    }
+}
+
+.tablet-container {
+    background-color: white;
+}
+
+.row1-tablet {
+    padding-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    border-bottom: 1px solid rgb(135, 135, 135);
+}
+
+.guitar__link--tablet {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.card-text--tablet {
+    padding-top: 20px;
+}
+
+.card1 {
+    padding-left: 30px;
+}
+
+.card2 {
+    padding-left: 24px;
+}
+
+.card3 {
+    padding-left: 30px;
+}
+
+.card4 {
+    padding-left: 34px;
+}
+
+a:hover {
+    color: #515151;
+}
+
+.card__title--tablet {
+    padding-top: 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+    color: #000000;
+
+}
+
+.card__text--tablet {
+    max-width: 170px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.card__price--tablet {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 6px;
+    color: #000000;
+}
+
+.card__stars--tablet {
+    margin-top: 0px;
+}
+
+.card__vector--tablet {
+    padding-left: 10px;
+    margin-top: -4px;
+}
+
+.card__description--tablet1 {
+    margin-left: -15px
+}
+
+.card__description--tablet2 {
+    margin-left: -35px
+}
+
+@media only screen and (max-width: 770px) {
+    .card__strunes--tablet {
+        display: flex;
+    }
+
+    .advert__img--tablet1 {
+        width: 42vw;
+    }
+
+    .advert__img--tablet2 {
+        margin-top: -20px;
+        width: 40vw;
+    }
+
+    .first__advert {
+        padding-left: 46px;
+    }
+
+    .row1-tablet {
+        padding-left: 40px;
+    }
+
+    .strune__title {
+        font-size: 2.2vw;
+        max-width: 40vw;
+    }
+
+    .strune__text {
+        max-width: 40vw;
+        font-size: 1.7vw;
+        line-height: 12px;
+    }
+
+    .strune__text--link {
+        margin-top: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .img__card--body1 {
+        padding-left: 20px;
+    }
+
+    .footer__contacts {
+        padding-left: 0px;
+    }
+
+    .footer__contacts:nth-child(odd) {
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 672px) {
+    .perkus__hidden {
+        display: none;
+    }
+
+    @media only screen and (max-width: 660px) {
+        .card__price--tablet {
+            margin-top: -6px;
+
+        }
+
+        .card__stars--tablet {
+            margin-top: -15px;
+        }
+
+        .card__vector--tablet {
+
+            margin-top: -6px;
+        }
+       
+
+    }
+
+    @media only screen and (max-width: 660px) {
+        .ch2 {
+            margin-top: 4px;
+        }
+
+        .ch3 {
+            margin-top: 5px;
+        }
+
+        .strune__text--link {
+            margin-top: 2.6vw;
+            font-size: 1.5vw;
+        }
+
+        .img__card--body1,
+        .img__card--body {
+            padding-left: 4px;
+        }
+
+        .card-text--tablet {
+            padding-left: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+
+        .strune__text--link {
+            margin-top: 1vw;
+            font-size: 1.5vw;
+        }
+    }
+
+    @media only screen and (max-width: 560px) {
+        .ch2 {
+            margin-top: -15px;
+        }
+
+        .ch3 {
+            margin-top: -6px;
+        }
+
+    }
+
+    @media only screen and (max-width: 552px) {
+        .ch2 {
+            margin-top: -15px;
+        }
+
+        .ch3 {
+            margin-top: -6px;
+        }
+
+    }
+
+    @media only screen and (max-width: 548px) {
+
+        .contacts__mobile--hidden {
+            display: none;
+        }
+
+        @media only screen and (max-width: 541px) {
+
+            .card__image--phone {
+                width: 250px;
+            }
+
+            .lidersale,
+            .advert__img--tablet1,
+            .first__advert {
+                display: none;
+            }
+
+            .lidersale--mobile {
+                display: block;
+            }
+
+            .card__title--tablet {
+                padding-top: 52px;
+                font-size: 16px;
+            }
+
+            .card__text--tablet {
+                max-width: max-content;
+                font-size: 16px;
+            }
+
+            .card__stars--tablet {
+                margin-top: 36px;
+                height: 15px;
+            }
+
+            .card__price--tablet {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            .strune__title {
+                margin-top: 10px;
+                font-size: 18px;
+                max-width: max-content;
+                margin-left: 12vw;
+                margin-bottom: 2vh;
+            }
+
+            .advert__img--tablet2 {
+                margin-left: 5vw;
+                width: 90vw;
+            }
+
+            .strune__text {
+                font-size: 16px;
+                line-height: 1.3;
+                max-width: max-content;
+                margin-left: 13vw;
+                margin-bottom: 2vh;
+            }
+
+            .strune__text--link {
+                font-size: 16px;
+                line-height: 1.3;
+                max-width: max-content;
+                margin-left: 13vw;
+                margin-bottom: 2vh;
+            }
+
+            .nav-link {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                padding-right: 0px;
+                color: rgba(255, 255, 255, 0.7);
+
+            }
+
+            .perkus__hidden2 {
+                display: none;
+            }
+
+            .nav-link:nth-child(4) {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 550px) {
+
+            .perkus__hidden2 {
+                display: none;
+            }
+
+            .img__card--body1,
+            .img__card--body {
+                padding-left: 40px;
+            }
+
+            .card-text--tablet {
+                padding-left: 60px;
+            }
+
+        }
+
+        @media only screen and (max-width: 993px) {
+
+            .inputik {
+                width: 0px;
+            }
+        }
+        
+    }
