@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTablet.css">
+
+
+</head>
+
+<body>
+
+    <div class="container--fluid">
+        <div class="row head--table ">
+            <div class="col-sm-6  d-flex align-self-center">
+                <div class="header__logo--tablet"><img src="images/logo_white.png" alt=""></div>
+                <div class="header__name--tablet">
+                    <span class="header__tablet--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div class="col-sm-6 header__col--tablet">
+                <div class="header__contacts--tablet">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+            </div>
+            <div class="col header__icons--tablet align-self-center">
+                <img class="header__icon-tablet" src="images//1.png" alt="">
+                <img class="header__icon-tablet" src="images//Group224.png" alt="">
+            </div>
+             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+             <label class="btn-menu float-end" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul class="hidden-menu">
+
+                <li><a href="#">Скрипки<br></a></li>
+                <li><a href="product_card.html">Гитары<br></a></li>
+                <li><a href="#">Барабаны<br></a></li>
+                <li><a href="#">Синтезаторы<br></a></li>
+
+                <li><a class="pt-3" href="">О нас<br></a></li>
+                <li><a href="#">Отзывы<br></a></li>
+                <li><a href="#">Акции<br></a></li>
+                <li><a href="#">Доставка<br></a></li>
+            </ul>
+
+            <div class="mask-content">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container  ">
+        <div class="row head pt-2 ">
+            <div class="col-5 col-xl-4 col-lg-4 col-md-5 d-flex ml-0 header__cologo">
+                <div class="header__logo"><img src="images/logo.png" alt=""></div>
+                <div class="header__name">
+                    <span class="header__name--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div
+                class="col-2 col-xl-4 col-lg-4 col-md-3 justify-content-lg-center justify-content-md-center justify-content-xl-start d-flex pt-1 header__contblock">
+                <div class="header__contacts">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+                <div class="cont d-md-none d-lg-block">
+                    <button type="button" class="btn btn-light header__contacts--button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="col-4 col-lg-3 col-md-2">
+                <input class="form-control header__search float-lg-end" style="max-width:320px" type="search"
+                    placeholder="Поиск товаров">
+            </div>
+            <div class="col  ">
+                <div class="header__garb--sum pt-1 float-end">2 200 руб.</div>
+                <div class="header__garb--icon pt-1  float-end">
+                    <img src="images/index/garb.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top menu__hidden ">
+        <div class="container-fluid header__menu">
+            <div class="container header__menu">
+                <div class="row header__navigation">
+                    <div class="col-8 col-xl-7 col-lg-6 col-md p-0">
+                        <nav class="nav colla">
+                            <a class="nav-link active" aria-current="page" href="#">Скрипки &#9660;</a>
+                            <a class="nav-link" href="#">Гитары &#9660;</a>
+                            <a class="nav-link" href="#">Барабаны &#9660;</a>
+                            <a class="nav-link">Синтезаторы &#9660;</a>
+                            <a class="nav-link d-md-none d-xl-block" href="#">Аксессуары &#9660;</a>
+                        </nav>
+                    </div>
+                    <div class="col-4 col-xl-5 col-lg-6 col-md">
+                        <nav class="nav float-end">
+                            <a class="nav-link active" aria-current="page" href="#">О нас &#9660;</a>
+                            <a class="nav-link" href="#">Отзывы &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Акции &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Доставка &#9660;</a>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main__hidden p-0">
+        <div class="row">
+            <div class="col-7">
+                <h1 class="main__title">Шагай по жизни<br> с музыкой</h1>
+                <p class="main__text">Лучшие музыкальные инструменты от лучших
+                    производителей на рынке в магазине №1
+                    среди покупателей!</p>
+                <a href="catalog.html"> <form action="page/new.html" target="_blank"> </form><button type="button" class="btn btn-dark main__button">Смотреть
+                        каталог</button>
+                </a>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide col-5 carousel-fade main__carousel"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators ">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="bg-secondary" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="bg-secondary" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/index/Frame3.png" class="d-block  carousel__img" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/index/Frame4.png" class="d-block  carousel__img" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/index/Frame5.png" class="d-block  carousel__img" alt="...">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-0">
+        <div class="row section__options">
+            <div class="col-2 col-md-2  section__options--new">Новинки:</div>
+            <div class="col-8 col-lg-8 col-md-7 ">
+                <nav class="nav justify-content-md-center  justify-content-lg-start">
+                    <a class="nav-link filters__link" href="#">Скрипки</a>
+                    <a class="nav-link filters__link" href="#">Гитары</a>
+                    <a class="nav-link filters__link" href="#">Барабаны</a>
+                    <a class="nav-link filters__link" href="#">Синтезаторы</a>
+                </nav>
+            </div>
+            <div class="col-2 col-lg-2 col-md-3  float-md-end  filters">
+                <button type="button" class="btn btn-dark  filters__button">Фильтры</button>
+                <img class="" src="images/index/filters.png" alt="">
+            </div>
+        </div>
+        <div class="row section__card slider responsive">
+            <div class="card col-lg-3 col-md-4  card__image " style="">
+                <img src="images/index/image4.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <p class="card-text">Микрофон Shure SM58</p>
+                    <span class="price ">108 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Студийный монитор KRK RP5</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4  card__image" style="">
+                <img src="images/index/image6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Электрогитара Gibson Les Paul</p>
+                    <span class="price ">765 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 d-md-none d-lg-block card__image" style="">
+                <img src="images/index/image7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Аудиоинтерфес Focusrite 3rd gen</p>
+                    <span class="price ">346 руб</span>
+                </div>
+            </div>
+        </div>
+        <div class="row advert">
+            <div class="col-xl-7 col-md-6 p-0"><img class="img__likvidation" src="images/index/Group235.png" alt="">
+            </div>
+            <div class="col-xl-5 col-md-6 p-0">
+                <p class="strune__title">D’addario XS - максимальная долговечность и ощущение комфорта</p>
+                <img class="strune__img " src="images/index/image10.png" alt="">
+                <p class="strune__text">D'addario XS: новый релиз инновационных струн, максимальная долговечность и
+                    ощущение комфорта!</p>
+                <p class="strune__text--link">Подробнее...</p>
+            </div>
+        </div>
+        <div class="row catalog__text">Каталог товаров:</div>
+
+        <div class="row section__card">
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Микрофон Shure SM58</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 d-lg-block d-md-none card__image" style="">
+                <img src="images/index/image5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Студийный монитор KRK RP5</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image18.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Скрипка Cremona SV</p>
+                    <span class="price ">942 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image17.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Синтезатор Casio</p>
+                    <span class="price ">896 руб</span>
+                </div>
+            </div>
+        </div>
+        <div class="row section__card">
+            <div class="card col-lg-3 col-md-4 d-lg-block d-md-none card__image" style="">
+                <img src="images/index/image7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Аудиоинтерфес Focusrite 3rd gen</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image15.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text mt-3">Цифровое пианино Casio Celviano</p>
+                    <span class="price">4 918 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4  card__image" style="">
+                <img src="images/index/image6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Электрогитара Gibson Les Paul</p>
+                    <span class="price ">8 187 руб</span>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 card__image" style="">
+                <img src="images/index/image16.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Струны для электрогитары Elixir</p>
+                    <span class="price ">68 руб</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col subscribe__title">ПОДПИШИТЕСЬ И ПОЛУЧИТЕ БОНУСЫ</div>
+        </div>
+        <div class="row">
+            <div class="col subscribe__text">&#10004 Бесплатная доставка по стране при заказе от 50 рублей<br>
+                &#10004 Бесплатный фирменный медиатор от Dunlop<br>
+                &#10004 Доступ к закрытым акциям и скидкам только подписчикам<br></div>
+        </div>
+        <div class="row bt__hid mt-3">
+            <div class="col">
+                <div class="input-group">
+                    <input type="text" class="form-control form-controll" placeholder="Ваш email">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn__dd" type="button">Получить бонусы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid tablet-container">
+        <div class="row row1-tablet m-0 pt-2 pb-1">
+            Каталог:
+        </div>
+        <div class="row row-2-tablet pt-4">
+            <div class="col ">
+                <a class="guitar__link--tablet" href="product_card.html">
+                    <img class="img__card--body1" src="images/catalog/one size/Rectangle15.png" class="" alt="...">
+                    <div class="card-body--tablet">
+                        <p class="card-text--tablet card1">Гитары</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a class="guitar__link--tablet" href="product_card.html">
+                    <img class="img__card--body" src="images/catalog/one size/Rectangle19.png" class="" alt="...">
+                    <div class="card-body--tablet">
+                        <p class="card-text--tablet card2">Клавишные</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col perkus__hidden2">
+                <a class="guitar__link--tablet" href="product_card.html">
+                    <img class="img__card--body" class="" src="images/catalog/one size/Rectangle17.png" class=""
+                        alt="...">
+                    <div class="card-body--tablet">
+                        <p class="card-text--tablet card3">Смычковые</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col perkus__hidden">
+                <a class="guitar__link--tablet" href="product_card.html">
+                    <img class="img__card--body" src="images/catalog/one size/Rectangle23.png" class="" alt="...">
+                    <div class="card-body--tablet">
+                        <p class="card-text--tablet card4">Перкуссия</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row row1-tablet m-0 pt-4 pb-1">
+            Лидеры продаж:
+        </div>
+        <div class="row lidersale">
+            <div class="col d-flex">
+                <img class="card__image--phone" src="images/index/image19.png" alt="">
+                <div class="card__description--tablet1">
+                    <h5 class="card__title--tablet ">Аксессуары</h5>
+                    <p class="card__text--tablet">Струны для акустической гитары ProArte </p>
+                    <img class="card__stars--tablet" src="images/product_section/Group67.png" alt="">
+                    <p href="#" class="card__price--tablet">45 руб
+                        <img class="card__vector--tablet" src="images/product_section/Vector.png" alt="">
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-6 card__strunes--tablet">
+                <img src="images/index/image19-1.png" alt="">
+                <div class="card__description--tablet2">
+                    <h5 class="card__title--tablet ">Аксессуары</h5>
+                    <p class="card__text--tablet">Струны для акустической гитары ProArte </p>
+                    <img class="card__stars--tablet ch2" src="images/product_section/Group67.png" alt="">
+                    <p href="#" class="card__price--tablet ch3">45 руб
+                        <img class="card__vector--tablet ch4" src="images/product_section/Vector.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row lidersale--mobile">
+            <div class="col d-flex">
+                <img class="card__image--phone" src="images/index/image19.png" alt="">
+                <div class="col">
+                    <h5 class="card__title--tablet ">Аксессуары</h5>
+                    <p class="card__text--tablet">Струны для акустической гитары ProArte </p>
+                    <img class="card__stars--tablet" src="images/product_section/Group67.png" alt="">
+                    <p href="#" class="card__price--tablet">45 руб
+                        <img class="card__vector--tablet" src="images/product_section/Vector.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row row1-tablet m-0 pt-2 pb-1">
+            Акции и скидки:
+        </div>
+        <div class="row pt-3">
+            <div class="col-6  first__advert">
+                <img class="advert__img--tablet1" src="images/index/Group235.png" alt="">
+            </div>
+            <div class="col p-0">
+                <p class="strune__title">D’addario XS - максимальная долговечность</p>
+                <img class="advert__img--tablet2 " src="images/index/image10.png" alt="">
+                <p class="strune__text">D'addario XS: новый релиз инновационных струн, максимальная долговечность и
+                    ощущение комфорта!</p>
+                <p class="strune__text--link">Подробнее...</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer footerdesktop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex mt-2 flex-lg-row flex-md-column">
+                    <p class="footer__contacts ">
+                        +375 (44) 908-34-28
+                    </p>
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 d-md-none">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer footertablet">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 contacts__mobile--hidden col-md-4 col-4 mt-1 flex-lg-row flex-md-column">
+                    <p class="footer__contacts p-0 ">
+                        +375 (44) 908-34-28
+                    </p>
+
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 col-1 d-md-none ">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button d-sm-none" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="css/product_section.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTablet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container--fluid sticky-top">
+        <div class="row head--table ">
+            <div class="col-sm-6  d-flex align-self-center">
+                <div class="header__logo--tablet"><img src="images/logo_white.png" alt=""></div>
+                <div class="header__name--tablet">
+                    <span class="header__tablet--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div class="col-sm-6 header__col--tablet">
+                <div class="header__contacts--tablet">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+            </div>
+            <div class="col header__icons--tablet align-self-center">
+                <img class="header__icon-tablet" src="images//1.png" alt="">
+                <img class="header__icon-tablet" src="images//Group224.png" alt="">
+            </div>
+            <!-- input нужен для того, что бы в дальнейшем задать стили иконке ☰ по событию checked, то есть когда меню будем открыать и закрыать -->
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <!-- Далее вёрстка самой иконки. Разделена на спаны, что бы красиво превращать в крестик при открытии (почти как в Телеграме :) -->
+            <label class="btn-menu float-end" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <!-- Менюшка раскрывающаяся и скрывающаяся -->
+            <ul class="hidden-menu">
+
+                <li><a href="">Скрипки<br></a></li>
+                <li><a href="">Гитары<br></a></li>
+                <li><a href="">Барабаны<br></a></li>
+                <li><a href="">Синтезаторы<br></a></li>
+
+                <li><a class="pt-3" href="">О нас<br></a></li>
+                <li><a href="">Отзывы<br></a></li>
+                <li><a href="">Акции<br></a></li>
+                <li><a href="">Доставка<br></a></li>
+            </ul>
+
+            <div class="mask-content">
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row head pt-2 ">
+            <div class="col-5 col-xl-4 col-lg-4 col-md-5 d-flex ml-0 header__cologo">
+                <div class="header__logo"><img src="images/logo.png" alt=""></div>
+                <div class="header__name">
+                    <span class="header__name--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div
+                class="col-2 col-xl-4 col-lg-4 col-md-3 justify-content-lg-center justify-content-md-center justify-content-xl-start d-flex pt-1 header__contblock">
+                <div class="header__contacts">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+                <div class="cont d-md-none d-lg-block">
+                    <button type="button" class="btn btn-light header__contacts--button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="col-4 col-lg-3 col-md-2 inputik ">
+                <input class="form-control header__search float-lg-end" style="max-width:320px" type="search"
+                    placeholder="Поиск товаров">
+            </div>
+            <div class="col  ">
+                <div class="header__garb--sum pt-1 float-end">2 200 руб.</div>
+                <div class="header__garb--icon pt-1  float-end">
+                    <img src="images/index/garb.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top menu__hidden ">
+        <div class="container-fluid header__menu">
+            <div class="container header__menu">
+                <div class="row header__navigation">
+                    <div class="col-8 col-xl-7 col-lg-6 col-md p-0">
+                        <nav class="nav colla">
+                            <a class="nav-link active" aria-current="page" href="#">Скрипки &#9660;</a>
+                            <a class="nav-link" href="#">Гитары &#9660;</a>
+                            <a class="nav-link" href="#">Барабаны &#9660;</a>
+                            <a class="nav-link">Синтезаторы &#9660;</a>
+                            <a class="nav-link d-md-none d-xl-block" href="#">Аксессуары &#9660;</a>
+                        </nav>
+                    </div>
+                    <div class="col-4 col-xl-5 col-lg-6 col-md">
+                        <nav class="nav float-end">
+                            <a class="nav-link active" aria-current="page" href="#">О нас &#9660;</a>
+                            <a class="nav-link" href="#">Отзывы &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Акции &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Доставка &#9660;</a>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container main d-none d-lg-block">
+        <div class="row mt-5">
+            <div class="col-1 col-sm-1 col-md-3 col-lg-4 col-xl-4">
+            </div>
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item bread"><a class="bread" href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item bread"><a class="bread" href="catalog.html">Каталог</a></li>
+                        <li class="breadcrumb-item bread"><a class="bread" href="product_card.html">Гитары</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fender Stratocaster</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row card__section">
+                <div class="col-12 col-md-7 col-lg-7 col-xl-6">
+                    <img class="product__images col-md-12" src="images/product_section/Group239.png" alt="">
+                </div>
+                <div class="col d-none d-xl-flex">
+
+                </div>
+                <div class="col-12 col-md-5 col-lg-5">
+                    <div class="container  product__description p-0">
+                        <div class="row product__description--title">
+                            Электрогитара Fender Squier Affinity Stratocaster Pink
+                        </div>
+                        <div class="row product__description--subtitle p-0 d-none d-md-flex">
+                            <div class="col-3 p-0">
+                                <span style="font-weight:400">
+                                    Категория:
+                                </span>
+
+                            </div>
+                            <div class="col-3 p-0">
+                                Гитары
+                            </div>
+                            <div class="col-3 p-0">
+                                Бренд:
+                            </div>
+                            <div class="col-3 p-0">
+                                Fender
+                            </div>
+                        </div>
+                        <div class="row product__description--text">
+                            Fender Squier Affinity Stratocaster Pink - электрогитара формы Stratocaster из серии
+                            Affinity от компании Fender Squier.<br>
+                            Корпус инструмента сделан из ольхи и оснащен белым пикгардом. Гриф гитары - кленовый, с
+                            удобным профилем С. Накладка выполнена из палисандра (21 лад).<br>
+                            Датчики гитары - синглы в бридже, середине и неке. Звучание гитары гибко настраивается с
+                            помощью ручки громкости, ручки тона и пятипозиционного переключателя датчиков.
+                            В гитаре используется хромовая фурнитура, защищенная от потускнения.
+                        </div>
+                        <div class="row product__description--price">
+                            1 260 руб
+                        </div>
+                        <div class="row product__description--buttons">
+                            <div class="col-12 col-md-3 col-lg-5 col-xl-4 p-0">
+                                <button class="btn btn-dark btn__show" type="button">Купить</button>
+
+                            </div>
+                            <div class="col-12 col-md-4 p-0">
+                                <a href="basket.html" class="">
+                                    <button class="btn btn__add" type="button">Добавить в козину</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row catalog__text">Похожиие товары:</div>
+        <div class="row ls section__card">
+            <div class="card col card__image " style="">
+                <img src="images/index/image4.png" class="card-img-top c" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Микрофон Shure SM58</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col card__image" style="">
+                <img src="images/index/image5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Студийный монитор KRK RP5</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col card__image" style="">
+                <img src="images/index/image6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Электрогитара Gibson Les Paul</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col-3 d-none d-xl-block card__image" style="">
+                <img src="images/index/image7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Аудиоинтерфес Focusrite 3rd gen</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-6 subscribe__title">ПОДПИШИТЕСЬ И ПОЛУЧИТЕ БОНУСЫ</div>
+        </div>
+        <div class="row">
+            <div class="col-6 subscribe__text">&#10004 Бесплатная доставка по стране при заказе от 50 рублей<br>
+                &#10004 Бесплатный фирменный медиатор от Dunlop<br>
+                &#10004 Доступ к закрытым акциям и скидкам только подписчикам<br></div>
+        </div>
+        <div class="row mt-3 d-none d-md-flex">
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control form-controll" placeholder="Ваш email">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn__dt" type="button">Получить бонусы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid main d-md-block d-lg-none">
+        <div class="row mt-5">
+            <div class="col-1 col-sm-1 col-md-3 col-lg-4 col-xl-4">
+
+            </div>
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item bread"><a class="bread" href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item bread"><a class="bread" href="catalog.html">Каталог</a></li>
+                        <li class="breadcrumb-item bread"><a class="bread" href="product_card.html">Гитары</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fender Stratocaster</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row card__section">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img class="product__images col-md-12" src="images/product_section/Group239.png" alt="">
+                </div>
+                <div class="col d-none d-lg-flex">
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="container  product__description p-0">
+                        <div class="row product__description--title">
+                            Электрогитара Fender Squier Affinity Stratocaster Pink
+                        </div>
+                        <div class="row product__description--subtitle d-none d-md-flex">
+                            <div class="col-3 p-0">
+                                <span style="font-weight: 400">
+                                    Категория:
+                                </span>
+
+                            </div>
+                            <div class="col-3 p-0">
+                                Гитары
+                            </div>
+                            <div class="col-3 p-0">
+                                Бренд:
+                            </div>
+                            <div class="col-3 p-0">
+                                Fender
+                            </div>
+                        </div>
+                        <div class="row product__description--text">
+                            Fender Squier Affinity Stratocaster Pink - электрогитара формы Stratocaster из серии
+                            Affinity от компании Fender Squier.<br>
+                            Корпус инструмента сделан из ольхи и оснащен белым пикгардом. Гриф гитары - кленовый, с
+                            удобным профилем С. Накладка выполнена из палисандра (21 лад).<br>
+                            Датчики гитары - синглы в бридже, середине и неке. Звучание гитары гибко настраивается с
+                            помощью ручки громкости, ручки тона и пятипозиционного переключателя датчиков.
+                            В гитаре используется хромовая фурнитура, защищенная от потускнения.
+                        </div>
+                        <div class="row product__description--price">
+                            1 260 руб
+                        </div>
+                        <div class="row product__description--buttons">
+                            <div class="col-12 col-md-5 p-0">
+                                <button class="btn btn-dark btn__show" type="button">Купить</button>
+
+                            </div>
+                            <div class="col-12 col-md-4 p-0">
+                                <a href="basket.html">
+                                    <button class="btn btn__add" type="button">Добавить в козину</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ls section__card">
+            <div class="card col card__image " style="">
+                <img src="images/index/image4.png" class="card-img-top c" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Микрофон Shure SM58</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col card__image" style="">
+                <img src="images/index/image5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Студийный монитор KRK RP5</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col card__image" style="">
+                <img src="images/index/image6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Электрогитара Gibson Les Paul</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+            <div class="card col d-none d-xl-block card__image" style="">
+                <img src="images/index/image7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Аудиоинтерфес Focusrite 3rd gen</p>
+                    <span class="price ">488 руб</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-6 col-sm-12 subscribe__title">ПОДПИШИТЕСЬ И ПОЛУЧИТЕ БОНУСЫ</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-12 subscribe__text">&#10004 Бесплатная доставка по стране при заказе от 50
+                рублей<br>
+                &#10004 Бесплатный фирменный медиатор от Dunlop<br>
+                &#10004 Доступ к закрытым акциям и скидкам только подписчикам<br></div>
+        </div>
+        <div class="row mt-3 d-none d-md-flex">
+            <div class="col-4 col-sm-12">
+                <div class="input-group">
+                    <input type="text" class="form-control form-controll" placeholder="Ваш email">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn__dt" type="button">Получить бонусы</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid footer footerdesktop ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex mt-2 flex-lg-row flex-md-column">
+                    <p class="footer__contacts ">
+                        +375 (44) 908-34-28
+                    </p>
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 d-md-none">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer mt-0 footertablet mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 contacts__mobile--hidden col-md-4 col-4 mt-1 flex-lg-row flex-md-column">
+                    <p class="footer__contacts p-0 ">
+                        +375 (44) 908-34-28
+                    </p>
+
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 col-1 d-md-none ">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button d-sm-none" type="button">Заказать
+                        звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>

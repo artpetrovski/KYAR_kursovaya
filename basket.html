@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="css/product_section.css">
+    <link rel="stylesheet" href="css/basket.css" class="css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTablet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container--fluid sticky-top">
+        <div class="row head--table ">
+            <div class="col-sm-6  d-flex align-self-center">
+                <div class="header__logo--tablet"><img src="images/logo_white.png" alt=""></div>
+                <div class="header__name--tablet">
+                    <span class="header__tablet--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div class="col-sm-6 header__col--tablet">
+                <div class="header__contacts--tablet">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+            </div>
+            <div class="col header__icons--tablet align-self-center">
+                <img class="header__icon-tablet" src="images//1.png" alt="">
+                <img class="header__icon-tablet" src="images//Group224.png" alt="">
+            </div>
+            <!-- input нужен для того, что бы в дальнейшем задать стили иконке ☰ по событию checked, то есть когда меню будем открыать и закрыать -->
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <!-- Далее вёрстка самой иконки. Разделена на спаны, что бы красиво превращать в крестик при открытии (почти как в Телеграме :) -->
+            <label class="btn-menu float-end" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <!-- Менюшка раскрывающаяся и скрывающаяся -->
+            <ul class="hidden-menu">
+
+                <li><a href="">Скрипки<br></a></li>
+                <li><a href="">Гитары<br></a></li>
+                <li><a href="">Барабаны<br></a></li>
+                <li><a href="">Синтезаторы<br></a></li>
+
+                <li><a class="pt-3" href="">О нас<br></a></li>
+                <li><a href="">Отзывы<br></a></li>
+                <li><a href="">Акции<br></a></li>
+                <li><a href="">Доставка<br></a></li>
+            </ul>
+
+            <div class="mask-content">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row head pt-2 ">
+            <div class="col-5 col-xl-4 col-lg-4 col-md-5 d-flex ml-0 header__cologo">
+                <div class="header__logo"><img src="images/logo.png" alt=""></div>
+                <div class="header__name">
+                    <span class="header__name--span">bass.store</span><br>
+                    Магазин музыкального оборудования
+                </div>
+            </div>
+            <div
+                class="col-2 col-xl-4 col-lg-4 col-md-3 justify-content-lg-center justify-content-md-center justify-content-xl-start d-flex pt-1 header__contblock">
+                <div class="header__contacts">+375 (29) 317-79-56<br>
+                    +375 (44) 908-34-28</div>
+                <div class="cont d-md-none d-lg-block">
+                    <button type="button" class="btn btn-light header__contacts--button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="col-4 col-lg-3 col-md-2 inputik ">
+                <input class="form-control header__search float-lg-end" style="max-width:320px" type="search"
+                    placeholder="Поиск товаров">
+            </div>
+            <div class="col  ">
+                <div class="header__garb--sum pt-1 float-end">2 200 руб.</div>
+                <div class="header__garb--icon pt-1  float-end">
+                    <img src="images/index/garb.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top menu__hidden ">
+        <div class="container-fluid header__menu">
+            <div class="container header__menu">
+                <div class="row header__navigation">
+                    <div class="col-8 col-xl-7 col-lg-6 col-md p-0">
+                        <nav class="nav colla">
+                            <a class="nav-link active" aria-current="page" href="#">Скрипки &#9660;</a>
+                            <a class="nav-link" href="#">Гитары &#9660;</a>
+                            <a class="nav-link" href="#">Барабаны &#9660;</a>
+                            <a class="nav-link">Синтезаторы &#9660;</a>
+                            <a class="nav-link d-md-none d-xl-block" href="#">Аксессуары &#9660;;</a>
+                        </nav>
+                    </div>
+                    <div class="col-4 col-xl-5 col-lg-6 col-md">
+                        <nav class="nav float-end">
+                            <a class="nav-link active" aria-current="page" href="#">О нас &#9660;</a>
+                            <a class="nav-link" href="#">Отзывы &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Акции &#9660;</a>
+                            <a class="nav-link d-md-none d-lg-block" href="#">Доставка &#9660;</a>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container main ">
+        <div class="row mt-5">
+            <div class="col-3 col-sm-3 col-md-4 col-lg-5 col-xl-5">
+
+            </div>
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item bread"><a class="bread" href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fender Stratocaster</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 mt-3 subscribe__title">Каталог:</div>
+            </div>
+            <div class="row basket__row2 mt-3" style="background-color: #f5f5f5">
+                <div class="col-12 col-md-12 col-lg-5 col-xl-4 col-xxl-4">
+                    <label class="inputEmail4">Введите промокод или номер Карты работника:</label>
+                    <input type="text" class="form-control" style="max-width: 662px" placeholder="">
+                </div>
+                <div class="col-3 d-none d-lg-block  col-lg-1 col-xl-3 col-xxl-4">
+
+                </div>
+                <div
+                    class=" col-7 col-sm-7 col-md-8 col-lg-3 col-xl-3 col-xxl-2 align-self-center basket__first-row--price  pt-sm-0">
+                    Итого: <span style="font-weight: 500"> 1 928 руб</span>
+                </div>
+                <div class="col-5 col-sm-5 col-md-1 col-lg-1 col-xl-1 col-xxl-1  align-self-center">
+                    <button class="btn btn-dark btn__dt" style="font-weight: 400" type="button">Оформить заказ</button>
+                </div>
+
+            </div>
+            <div class="row basket__row mt-3 d-none d-lg-flex" style="background-color: #f5f5f5">
+                <div class="col-6 col-lg-7 col-xl-6 d-flex ">
+                    <img class="basket__image align-self-center" src="images/basket/image19.png" alt="">
+                    <p class="basket__text align-self-center">Классическая гитара Stagg C440M BLK</p>
+                </div>
+                <div class="col-xl-3 col-lg-1">
+
+                </div>
+                <div class="col-xl-2 col-lg-3 d-flex justify-content-center ">
+                    <div class="count align-self-center ">
+                        <div class="count__box">
+                            <input type="number" class="count__input" min="1" max="100" value="1">
+                        </div>
+                        <div class="count__controls">
+                            <button type="button" class="count__up">
+                                <img src="./images/icons/icon-up.svg" alt="Increase">
+                            </button>
+                            <button type="button" class="count__down">
+                                <img src="./images/icons/icon-down.svg" alt="Decrease">
+                            </button>
+                        </div>
+
+                        <p class="basket__price">820 р.</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex">
+                    <img class="align-self-center pb-3" src="images/icons/garbage.png" alt="">
+                </div>
+            </div>
+
+            <div class="row basket__row mt-3 d-none d-lg-flex" style="background-color: #f5f5f5">
+                <div class="col-6 col-lg-7 col-xl-6 d-flex ">
+                    <img class="basket__image align-self-center" src="images/basket/image19-1.png" alt="">
+                    <p class="basket__text align-self-center">Электрогитара Fender Squier Bullet Telecaster</p>
+                </div>
+                <div class="col-xl-3 col-lg-1">
+
+                </div>
+                <div class="col-xl-2 col-lg-3 d-flex justify-content-center ">
+                    <div class="count align-self-center ">
+                        <div class="count__box">
+                            <input type="number" class="count__input" min="1" max="100" value="1">
+                        </div>
+                        <div class="count__controls">
+                            <button type="button" class="count__up">
+                                <img src="./images/icons/icon-up.svg" alt="Increase">
+                            </button>
+                            <button type="button" class="count__down">
+                                <img src="./images/icons/icon-down.svg" alt="Decrease">
+                            </button>
+                        </div>
+
+                        <p class="basket__price">960 р.</p>
+                    </div>
+                </div>
+
+                <div class="col d-flex">
+                    <img class="align-self-center pb-3" src="images/icons/garbage.png" alt="">
+                </div>
+
+            </div>
+            <div class="row basket__row mt-3 d-flex d-lg-none" style="background-color: #f5f5f5">
+                <div class="col-4 col-md-3 d-flex">
+                    <img class="basket__image align-self-center" src="images/basket/image19.png" alt="">
+                </div>
+                <div class="col-8 col-md-9">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <p class="basket__text align-self-center" style="font-weight: 300; font-size:18px">
+                                Классическая гитара Stagg C440M BLK</p>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="count align-self-center ">
+                                    <div class="count__box">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                    <div class="count__controls">
+                                        <button type="button" class="count__up">
+                                            <img src="./images/icons/icon-up.svg" alt="Increase">
+                                        </button>
+                                        <button type="button" class="count__down">
+                                            <img src="./images/icons/icon-down.svg" alt="Decrease">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p class="basket__price" style="font-weight: 500; font-size:18px">820 р.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row basket__row mt-3 d-flex d-lg-none" style="background-color: #f5f5f5">
+                <div class="col-4 col-md-3 d-flex">
+                    <img class="basket__image align-self-center" src="images/basket/image19-1.png" alt="">
+                </div>
+                <div class="col-8 col-md-9">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <p class="basket__text align-self-center" style="font-weight: 300; font-size:18px">
+                                Электрогитара Fender Squier Bullet Telecaster</p>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="count align-self-center ">
+                                    <div class="count__box">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                    <div class="count__controls">
+                                        <button type="button" class="count__up">
+                                            <img src="./images/icons/icon-up.svg" alt="Increase">
+                                        </button>
+                                        <button type="button" class="count__down">
+                                            <img src="./images/icons/icon-down.svg" alt="Decrease">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p class="basket__price" style="font-weight: 500; font-size:18px">970 р.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row basket__row mt-3 d-flex d-lg-none" style="background-color: #f5f5f5">
+                <div class="col-4 col-md-3 d-flex">
+                    <img class="basket__image align-self-center" src="images/basket/Group243.png" alt="">
+                </div>
+                <div class="col-8 col-md-9">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <p class="basket__text align-self-center" style="font-weight: 300; font-size:18px">
+                                Стойка гитарная JS11 Dinkyr</p>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="count align-self-center ">
+                                    <div class="count__box">
+                                        <input type="number" class="count__input" min="1" max="100" value="1">
+                                    </div>
+                                    <div class="count__controls">
+                                        <button type="button" class="count__up">
+                                            <img src="./images/icons/icon-up.svg" alt="Increase">
+                                        </button>
+                                        <button type="button" class="count__down">
+                                            <img src="./images/icons/icon-down.svg" alt="Decrease">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p class="basket__price" style="font-weight: 500; font-size:18px">55 р.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container main  ">
+                <div class="row ">
+                    <div class="col-6 col-sm-12 subscribe__title mt-5">ПОДПИШИТЕСЬ И ПОЛУЧИТЕ БОНУСЫ</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 subscribe__text">&#10004;Бесплатная доставка по стране при заказе от 50
+                        рублей<br>
+                        &#10004;Бесплатный фирменный медиатор от Dunlop<br>
+                        &#10004;Доступ к закрытым акциям и скидкам только подписчикам<br></div>
+                </div>
+                <div class="row mt-3 d-none d-md-flex">
+                    <div class="col-4 col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-controll" placeholder="Ваш email">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark btn__dt" type="button">Получить бонусы</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid footer footerdesktop mt-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-flex mt-2 flex-lg-row flex-md-column">
+                    <p class="footer__contacts ">
+                        +375 (44) 908-34-28
+                    </p>
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 d-md-none">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer mt-0 footertablet mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col d-flex p-0">
+                    <div class="footer__logo"><img src="images/logo_white.png" alt=""></div>
+                    <div class="footer__name">
+                        <span class="footer__name--span">bass.store</span><br>
+                        Магазин музыкального оборудования
+                    </div>
+                </div>
+                <div class="col-lg-4 contacts__mobile--hidden col-md-4 col-4 mt-1 flex-lg-row flex-md-column">
+                    <p class="footer__contacts p-0 ">
+                        +375 (44) 908-34-28
+                    </p>
+
+                    <p class="footer__contacts">
+                        +375 (29) 317-79-56
+                    </p>
+                </div>
+                <div class="col-lg-1 col-1 d-md-none ">
+                    <a href="#" title="Вернуться к началу" class="topbutton"><img src="images/uppage.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-2">
+                    <button class="btn btn-dark btn__dd footer__button d-sm-none" type="button">Заказать
+                        звонок</button>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="nav nav-footer">
+                    <a class="nav-link active uppage" aria-current="page" href="#">Скрипки &#9660;</a>
+                    <a class="nav-link" href="#">Гитары &#9660;</a>
+                    <a class="nav-link" href="#">Барабаны &#9660;</a>
+                    <a class="nav-link ">Синтезаторы &#9660;</a>
+                    <a class="nav-link" href="#">Аксессуары &#9660;</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+
+</html>
